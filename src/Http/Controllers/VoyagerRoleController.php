@@ -46,6 +46,8 @@ class VoyagerRoleController extends VoyagerBaseController
         //Validate fields
         $val = $this->validateBread($request->all(), $dataType->addRows)->validate();
 
+
+
         $data = new $dataType->model_name();
         $this->insertUpdateData($request, $slug, $dataType->addRows, $data);
 
